@@ -49,7 +49,8 @@ public class MyFileListenerAdaptor extends FileAlterationListenerAdaptor {
 
                         //触发音效播放，110.MP3
                         Mp3Thread mp3Thread = new Mp3Thread();
-                        mp3Thread.run();
+//                        mp3Thread.run();
+                        new Thread(mp3Thread).start();
                     }
                 }
             }

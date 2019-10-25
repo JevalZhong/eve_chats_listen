@@ -2,9 +2,9 @@ package com.jevalable.cn.thread;
 
 import com.jevalable.cn.MainStart;
 import javazoom.jl.player.Player;
-import org.apache.commons.io.FileUtils;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 
 public class Mp3Thread implements Runnable{
     @Override

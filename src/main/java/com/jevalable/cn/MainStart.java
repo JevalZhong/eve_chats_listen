@@ -11,12 +11,12 @@ import java.util.Scanner;
 
 public class MainStart {
 
-    private  static String FILE_PATH;
-    private  static String FILE_SUFFIX = ".txt";
-    public static long lineNum = 0;
-    public static String FILE_LISTEN_NAME;
+    private  static String FILE_PATH;//定位的聊天文件位置
+    private final static String FILE_SUFFIX = ".txt";//需要监听的文件名后缀
+    public static long lineNum = 0;//当前标记的聊天行数。
+    public static String FILE_LISTEN_NAME;//监听发额频道名称
 
-    public static File MP3_FILE;
+    public static File MP3_FILE;//声音预警文件
 
     public static void main(String[] args){
         try {
@@ -30,7 +30,7 @@ public class MainStart {
             System.out.print("监听关键字，英文逗号隔开：");
             String stars = sc.nextLine();
             String[] starStrings = stars.split(",");
-            List<String> starList =  Arrays.asList(starStrings);
+            List<String> starList = Arrays.asList(starStrings);
 
             System.out.println("设置完成，正在监听聊天频道 =========================> ");
 
